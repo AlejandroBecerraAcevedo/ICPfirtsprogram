@@ -1,0 +1,1 @@
+{"canister_methods":{"queries":[{"name":"greet","composite":false},{"name":"ObtieneUsuarios","composite":false}],"updates":[{"name":"eliminarUsuario"},{"name":"createUsers"}],"callbacks":{}}}

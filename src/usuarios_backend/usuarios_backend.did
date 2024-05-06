@@ -1,0 +1,6 @@
+service: () -> {
+    ObtieneUsuarios: () -> (vec record {nombre:text; edad:nat8; idUsuario:principal; segundoApellido:text; primerApellido:text; fechanacimiento:text}) query;
+    createUsers: () -> (vec record {nombre:text; edad:nat8; idUsuario:principal; segundoApellido:text; primerApellido:text; fechanacimiento:text});
+    eliminarUsuario: (text) -> (variant {Ok:record {nombre:text; edad:nat8; idUsuario:principal; segundoApellido:text; primerApellido:text; fechanacimiento:text}; Err:variant {UserDoesNotExist:text}});
+    greet: (text) -> (text) query;
+}
